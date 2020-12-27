@@ -18,8 +18,10 @@ const db = knex({
     host : '127.0.0.1',
     user : 'jacquelinelonghurst',
     password : '',
-    database : 'smartbrain'
-    
+    database : 'smartbrain',
+    connectionString: process.env.DATABASE_URL,
+    ssl : true,
+
   }
 });
 
